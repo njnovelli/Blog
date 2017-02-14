@@ -1,0 +1,5 @@
+<% @blog_post.comment.each do |comment| %>
+	<h4><%= comment.author %></h4>
+	<p><%= time_ago_in_words(blog_post.created_at) %> ago</p>
+	<p><%= comment.comment_entry %></P>
+	<% end %>
